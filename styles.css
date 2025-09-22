@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: url(image/fireyourteamheader.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+}
+
+.nav-elements {
+    display: flex;
+    padding: 10px 0px;
+    gap: 230px;
+    align-items: center;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.navbar {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.special-link {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+span {
+    display: flex;
+}
+
+span img {
+    height: 35px;
+}
+
+.special-link span img {
+    height: 35px;
+    transition: transform 0.4s ease;
+}
+
+.special-link:hover span img {
+    transform: translateY(5px);
+}
+
+.hirebtn {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hirebtn a {
+    text-decoration: none;
+    color: #5300E4;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.hirebtn:hover {
+    transform: scale(1.05);
+    background-color: #5300E4;
+}
+
+.hirebtn:hover a {
+    color: white;
+}
+
+
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.left-col {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h1 {
+    font-family: Consolas;
+    font-size: 56px;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+}
+
+
+.left-col,
+.right-col {
+    display: flex;
+    align-items: flex-end; /* push inner content to bottom */
+}
+
+.agentize-btn {
+    background-color: white;
+    padding: 20px 25px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #5300E4;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.agentize-btn:hover {
+    transform: scale(1.05);
+    background-color: #5300E4;
+    color: white;
+}
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.quote-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 100px;
+
+
+    .quote {
+        width: 50%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+}
+
+.nvidia-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    p {
+        font-size: 20px;
+    }
+
+    img {
+        height: 40px;
+        margin-top: 10px;
+    }
+}
+
+
+.carouse-wrap {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel, .carouse2 {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Card styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 7px;
+}
+
+.card h2 {
+    font-family: Consolas;
+}
+
+.card p {
+    font-family: Manrope, sans-serif;
+    font-size: 15px;
+}
+
+/* Scroll animations */
+.carousel {
+    animation: scrollRight 30s linear infinite;
+}
+
+.carouse2 {
+    animation: scrollLeft 30s linear infinite;
+}
+
+/* Pause when hovered */
+.carousel:hover,
+.carouse2:hover {
+    animation-play-state: paused;
+}
+
+/* Keyframes */
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+.explore-wrap {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 100px;
+
+
+    a {
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.explore-wrap img {
+    transition: transform 0.8s ease;
+}
+
+.explore-wrap:hover img {
+    transform: translateX(8px);
+}
+
+
+
+.banner-wrap {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 60px;
+    margin: 0 auto;
+
+
+    a img {
+        height: 65px;
+    }
+}
