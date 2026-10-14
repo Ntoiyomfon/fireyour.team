@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fireyour.team</title>
     <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
@@ -14,13 +16,21 @@
                         <img src="logo/fireyour.teamlogo.png" alt="fireyour.team logo">
                     </a>
                 </div>
-                <div class="navbar">
+                <div class="navbar" id="navbar">
                     <a href="#">Home</a>
-                    <div class="special-link">
-                        <a href="#">AI Solutions</a>
-                        <span>
-                            <img src="svgs/reveal-icon.svg" alt="down arrow">
-                        </span>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                            AI Solutions
+                            <span class="dropdown-icon">
+                                <img src="svgs/reveal-icon.svg" alt="">
+                            </span>
+                        </button>
+                        <div class="dropdown-menu" role="menu">
+                            <a href="#" role="menuitem">AI Agent Development</a>
+                            <a href="#" role="menuitem">Process Automation</a>
+                            <a href="#" role="menuitem">LLM Integration</a>
+                            <a href="#" role="menuitem">AI Consulting</a>
+                        </div>
                     </div>
                     <a href="#">FAQ</a>
                     <a href="#">Contact</a>
@@ -28,6 +38,11 @@
                 <div class="hirebtn">
                     <a href="#" class="hire-us-btn">Hire us</a>
                 </div>
+                <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
 
             <section>
